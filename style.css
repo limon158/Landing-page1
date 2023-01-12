@@ -1,0 +1,12 @@
+/* coustom variables */
+:root{
+    /* colors */
+    --white: #FFFFFF;
+    --primary-color: #000000;
+    --highlight-color: #562EFF;
+    --important-text-color: #ED6B4F;
+    --duration-viw-color: #ED6B4F;
+    /* font-family */
+    --primary-font: 'Poppins', sans-serif;
+
+}
