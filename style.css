@@ -1,12 +1,88 @@
-/* coustom variables */
-:root{
+    /* coustom variables */
+    :root {
     /* colors */
-    --white: #FFFFFF;
+    --main-bg: #f3f1ff;
+    --container-bg: #ffffff;
     --primary-color: #000000;
-    --highlight-color: #562EFF;
-    --important-text-color: #ED6B4F;
-    --duration-viw-color: #ED6B4F;
+    --secondary-color: #9F9F9F;
+    --highlight-color: #562eff;
+    --important-text-color: #ed6b4f;
+    --duration-viw-color: #ed6b4f;
     /* font-family */
-    --primary-font: 'Poppins', sans-serif;
+    --primary-font: "Poppins", sans-serif;
+    }
+    /* common styles */
 
-}
+    body {
+    font-family: var(--primary-font);
+    background-color: var(--main-bg);
+    }
+    hr {
+    border: 1px solid #d1d1d1;
+    margin-bottom: 30px;
+    }
+    main {
+    display: flex;
+    justify-content: center;
+    }
+    .container {
+    background-color: var(--container-bg);
+    width: 870px;
+    padding: 30px;
+    }
+    /* Top players styles */
+    .top-players {
+    margin-bottom: 22px;
+    }
+    .section-title {
+    font-size: 24px;
+    color: var(--highlight-color);
+    margin-top: 3px;
+    }
+    .players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    }
+    .player {
+    display: flex;
+    align-items: center;
+    }
+    .player img {
+    width: 56px;
+    height: 56px;
+    }
+    .player-name {
+    margin-left: 16px;
+    font-size: 18px;
+    }
+
+    /* Top blog styles */
+
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 26px;
+    }
+    .blog{
+        display: flex;
+    }
+    .blog .thumbnail img {
+    width: 177px;
+    height: 117px;
+    }
+    .blog-info{
+        margin-left: 16px;
+    }
+    .blog-title{
+        font-size: 20px;
+    }
+    .blog-author{
+        font-size: 16px;
+        color: var(--secondary-color)
+    }
+    .blog-author a{
+        text-decoration: none;
+        font-size: 16px;
+        color: var(--highlight-color);
+    }
